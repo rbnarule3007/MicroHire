@@ -3,8 +3,8 @@ services:
   - type: web
     name: freelancer-backend
     env: docker
-    dockerContext: backend of the project
-    dockerfilePath: backend of the project/Dockerfile
+    dockerContext: backend
+    dockerfilePath: backend/Dockerfile
     plan: free
     envVars:
       - key: SERVER_PORT

@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./backend of the project
+      context: ./backend
       dockerfile: Dockerfile
     container_name: freelancer-backend
     ports:
@@ -23,7 +23,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend of the project
+      context: ./frontend
       dockerfile: Dockerfile
       args:
         - VITE_API_URL=http://localhost:8080
