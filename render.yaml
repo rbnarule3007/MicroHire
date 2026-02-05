@@ -11,13 +11,10 @@ services:
         value: 8080
       - key: DB_URL
         fromGroup: db-settings
-        key: DB_URL
       - key: DB_USERNAME
         fromGroup: db-settings
-        key: DB_USERNAME
       - key: DB_PASSWORD
         fromGroup: db-settings
-        key: DB_PASSWORD
 
 envVarGroups:
   - name: db-settings
