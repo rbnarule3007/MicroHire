@@ -1,0 +1,30 @@
+services:
+  # Backend Service
+  - type: web
+    name: freelancer-backend
+    env: docker
+    dockerContext: backend of the project
+    dockerfilePath: backend of the project/Dockerfile
+    plan: free
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: DB_URL
+        fromGroup: db-settings
+        key: DB_URL
+      - key: DB_USERNAME
+        fromGroup: db-settings
+        key: DB_USERNAME
+      - key: DB_PASSWORD
+        fromGroup: db-settings
+        key: DB_PASSWORD
+
+envVarGroups:
+  - name: db-settings
+    envVars:
+      - key: DB_URL
+        value: placeholder-update-in-dashboard
+      - key: DB_USERNAME
+        value: placeholder-update-in-dashboard
+      - key: DB_PASSWORD
+        value: placeholder-update-in-dashboard
