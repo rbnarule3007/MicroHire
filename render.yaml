@@ -23,8 +23,8 @@ envVarGroups:
   - name: db-settings
     envVars:
       - key: DB_URL
-        value: placeholder-update-in-dashboard
+        value: jdbc:mysql://mysql-190fe3fd-rbnarule2002-3e09.g.aivencloud.com:24165/defaultdb?sslMode=REQUIRED
       - key: DB_USERNAME
-        value: placeholder-update-in-dashboard
+        value: avnadmin
       - key: DB_PASSWORD
-        value: placeholder-update-in-dashboard
+        value: AVNS_VmWI7YYokW7B0q19Pzt
